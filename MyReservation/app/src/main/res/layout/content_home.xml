@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".HomeActivity"
+    tools:showIn="@layout/activity_home">
+
+    <RelativeLayout
+        android:id="@+id/layout_parking"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp">
+        <ImageView
+            android:id="@+id/img_parking"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_local_parking_24dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/img_parking"
+            android:text="@string/action_parking"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="50dp"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_dining"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/layout_parking">
+        <ImageView
+            android:id="@+id/img_dining"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_local_dining_24dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/img_dining"
+            android:text="@string/action_dining"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="50dp"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_commute"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/layout_dining">
+        <ImageView
+            android:id="@+id/img_commute"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_directions_bus_24dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/img_commute"
+            android:text="@string/action_commute"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="50dp"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+</RelativeLayout>

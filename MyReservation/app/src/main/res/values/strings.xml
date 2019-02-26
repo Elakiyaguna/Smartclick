@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyReservation</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="action_parking">Parking</string>
+    <string name="action_dining">Dining</string>
+    <string name="action_commute">Commute</string>
+    <string name="title_activity_parking_main">ParkingMainActivity</string>
+</resources>
