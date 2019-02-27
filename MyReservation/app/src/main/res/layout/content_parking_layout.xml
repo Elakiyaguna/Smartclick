@@ -10,12 +10,15 @@
 
 
     <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp"
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorBlue"
         android:padding="20dp"
-        android:background="@color/colorBlue">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TableRow
             android:layout_width="match_parent"
@@ -25,33 +28,36 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1">
+
                 <TextView
                     android:id="@+id/t0"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="T0"
-                    android:textSize="50dp"
                     android:layout_weight="0.33"
-                    />
+                    android:text="T0"
+                    android:textSize="50dp" />
+
                 <TextView
                     android:id="@+id/us"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="US"
-                    android:textSize="50dp"
                     android:layout_weight="0.33"
-                    android:padding="20dp"/>
+                    android:padding="20dp"
+                    android:text="US"
+                    android:textSize="50dp" />
+
                 <TextView
                     android:id="@+id/ls"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:padding="20dp"
                     android:text="LS"
                     android:textSize="50dp"
-                    android:padding="20dp"
-                    android:layout_weight="0.33"
-                    android:visibility="invisible"/>
+                    android:visibility="invisible" />
             </LinearLayout>
-        </TableRow>/>
+        </TableRow>
+        />
 
         <TableRow
             android:layout_width="match_parent"
@@ -66,33 +72,36 @@
                     android:id="@+id/lot1"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.33"
-                    android:text="Lot1"
-                    android:textSize="20dp"
                     android:layout_marginRight="20dp"
+                    android:layout_weight="0.33"
                     android:background="@color/colorBlue"
-                    android:padding="20dp"/>
+                    android:padding="20dp"
+                    android:text="Lot1"
+                    android:textSize="20dp" />
+
                 <Button
                     android:id="@+id/lot2"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.33"
-                    android:text="Lot2"
-                    android:textSize="20dp"
                     android:layout_marginRight="20dp"
+                    android:layout_weight="0.33"
                     android:background="@color/colorBlue"
-                    android:padding="20dp"/>
+                    android:padding="20dp"
+                    android:text="Lot2"
+                    android:textSize="20dp" />
+
                 <Button
                     android:id="@+id/lot3"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.33"
-                    android:text="Lot3"
-                    android:textSize="20dp"
                     android:background="@color/colorPrimaryDark"
-                    android:padding="20dp"/>
+                    android:padding="20dp"
+                    android:text="Lot3"
+                    android:textSize="20dp" />
             </LinearLayout>
-        </TableRow>/>
+        </TableRow>
+        />
 
         <TableRow
             android:layout_width="match_parent"
@@ -107,36 +116,40 @@
                     android:id="@+id/lot4"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.33"
-                    android:text="Lot4"
-                    android:textSize="20dp"
-                    android:layout_marginRight="20dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.33"
                     android:background="@color/colorPrimaryDark"
-                    android:padding="20dp"/>
+                    android:padding="20dp"
+                    android:text="Lot4"
+                    android:textSize="20dp" />
+
                 <Button
                     android:id="@+id/lot5"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.33"
-                    android:text="Lot5"
-                    android:textSize="20dp"
-                    android:layout_marginRight="20dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.33"
                     android:background="@color/colorPrimaryDark"
-                    android:padding="20dp"/>
+                    android:padding="20dp"
+                    android:text="Lot5"
+                    android:textSize="20dp" />
+
                 <Button
                     android:id="@+id/lot6"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.33"
-                    android:text="Lot6"
-                    android:textSize="20dp"
                     android:layout_marginTop="20dp"
+                    android:layout_weight="0.33"
                     android:background="@color/colorPrimaryDark"
-                    android:padding="20dp"/>
+                    android:padding="20dp"
+                    android:text="Lot6"
+                    android:textSize="20dp" />
             </LinearLayout>
-        </TableRow>/>
+        </TableRow>
+        />
+
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="100dp">
@@ -150,36 +163,40 @@
                     android:id="@+id/lot7"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.33"
-                    android:text="Lot7"
-                    android:textSize="20dp"
-                    android:layout_marginRight="20dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.33"
                     android:background="@color/colorBlue"
-                    android:padding="20dp"/>
+                    android:padding="20dp"
+                    android:text="Lot7"
+                    android:textSize="20dp" />
+
                 <Button
                     android:id="@+id/lot8"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.33"
-                    android:text="Lot8"
-                    android:textSize="20dp"
-                    android:layout_marginRight="20dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.33"
                     android:background="@color/colorPrimaryDark"
-                    android:padding="20dp"/>
+                    android:padding="20dp"
+                    android:text="Lot8"
+                    android:textSize="20dp" />
+
                 <Button
                     android:id="@+id/lot9"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.33"
-                    android:text="Lot9"
-                    android:textSize="20dp"
                     android:layout_marginTop="20dp"
+                    android:layout_weight="0.33"
                     android:background="@color/colorBlue"
-                    android:padding="20dp"/>
+                    android:padding="20dp"
+                    android:text="Lot9"
+                    android:textSize="20dp" />
             </LinearLayout>
-        </TableRow>/>
+        </TableRow>
+        />
+
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="100dp">
@@ -193,36 +210,40 @@
                     android:id="@+id/lot10"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.33"
-                    android:text="Lot10"
-                    android:textSize="20dp"
-                    android:layout_marginRight="20dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.33"
                     android:background="@color/colorPrimaryDark"
-                    android:padding="20dp"/>
+                    android:padding="20dp"
+                    android:text="Lot10"
+                    android:textSize="20dp" />
+
                 <Button
                     android:id="@+id/lot11"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.33"
-                    android:text="Lot11"
-                    android:textSize="20dp"
-                    android:layout_marginRight="20dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.33"
                     android:background="@color/colorPrimaryDark"
-                    android:padding="20dp"/>
+                    android:padding="20dp"
+                    android:text="Lot11"
+                    android:textSize="20dp" />
+
                 <Button
                     android:id="@+id/lot12"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.33"
-                    android:text="Lot12"
-                    android:textSize="20dp"
                     android:layout_marginTop="20dp"
+                    android:layout_weight="0.33"
                     android:background="@color/colorPrimaryDark"
-                    android:padding="20dp"/>
+                    android:padding="20dp"
+                    android:text="Lot12"
+                    android:textSize="20dp" />
             </LinearLayout>
-        </TableRow>/>
+        </TableRow>
+        />
+
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="100dp">
@@ -236,36 +257,39 @@
                     android:id="@+id/lot13"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.33"
-                    android:text="Lot13"
-                    android:textSize="20dp"
-                    android:layout_marginRight="20dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.33"
                     android:background="@color/colorPrimaryDark"
-                    android:padding="20dp"/>
+                    android:padding="20dp"
+                    android:text="Lot13"
+                    android:textSize="20dp" />
+
                 <Button
                     android:id="@+id/lot14"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.33"
-                    android:text="Lot14"
-                    android:textSize="20dp"
-                    android:layout_marginRight="20dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.33"
                     android:background="@color/colorBlue"
-                    android:padding="20dp"/>
+                    android:padding="20dp"
+                    android:text="Lot14"
+                    android:textSize="20dp" />
+
                 <Button
                     android:id="@+id/lot15"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.33"
-                    android:text="Lot15"
-                    android:textSize="20dp"
                     android:layout_marginTop="20dp"
+                    android:layout_weight="0.33"
                     android:background="@color/colorBlue"
-                    android:padding="20dp"/>
+                    android:padding="20dp"
+                    android:text="Lot15"
+                    android:textSize="20dp" />
             </LinearLayout>
-        </TableRow>/>
+        </TableRow>
+        />
 
     </TableLayout>
 </android.support.constraint.ConstraintLayout>

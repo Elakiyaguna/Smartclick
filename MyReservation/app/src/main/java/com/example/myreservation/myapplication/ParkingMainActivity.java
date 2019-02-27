@@ -20,7 +20,7 @@ public class ParkingMainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         TextView Tower1US = (TextView)findViewById(R.id.t1_us_cnt);
-        FileHelper.saveToFile( Tower1US.getText().toString());
+
         Tower1US.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
