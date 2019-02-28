@@ -5,152 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DiningMainActivity">
-    tools:context=".ParkingMainActivity"
-    tools:showIn="@layout/activity_parking_main">
 
-
-    <TableLayout
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp"
-        android:padding="20dp"
-        android:background="@color/colorAccent">
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
 
-        <TableRow
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="100dp">
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
+    </android.support.design.widget.AppBarLayout>
 
-                <TextView
-                    android:id="@+id/t0"
-                    android:layout_width="60dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.33"
-                    android:text="Dining area"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="30dp" />
+    <include layout="@layout/content_dining_main" />
 
-                <TextView
-                    android:id="@+id/us"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.33"
-                    android:padding="20dp"
-                    android:text="Available Chairs"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="30dp" />
-
-            </LinearLayout>
-        </TableRow>/>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="100dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-                <TextView
-                    android:id="@+id/HM"
-                    android:layout_width="60dp"
-                    android:layout_height="wrap_content"
-                    android:text="Home Meals"
-                    android:textSize="30dp"
-                    android:layout_weight="0.33"/>
-                <TextView
-                    android:id="@+id/HM_cnt"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:text="4"
-                    android:textSize="30dp"
-                    android:layout_weight="0.33"
-                    android:padding="20dp"/>
-
-            </LinearLayout>
-        </TableRow>/>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="100dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-                <TextView
-                    android:id="@+id/t3"
-                    android:layout_width="60dp"
-                    android:layout_height="wrap_content"
-                    android:text="Tower 3"
-                    android:textSize="30dp"
-                    android:layout_weight="0.33"/>
-                <TextView
-                    android:id="@+id/t3_cnt"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:text="15"
-                    android:textSize="30dp"
-                    android:layout_weight="0.33"
-                    android:padding="20dp"/>
-
-            </LinearLayout>
-        </TableRow>/>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="100dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-                <TextView
-                    android:id="@+id/t4"
-                    android:layout_width="60dp"
-                    android:layout_height="wrap_content"
-                    android:text="Tower 4"
-                    android:textSize="30dp"
-                    android:layout_weight="0.33"/>
-                <TextView
-                    android:id="@+id/t4_cnt"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:text="12"
-                    android:textSize="30dp"
-                    android:layout_weight="0.33"
-                    android:padding="20dp"/>
-
-            </LinearLayout>
-        </TableRow>/>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="100dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-                <TextView
-                    android:id="@+id/AM"
-                    android:layout_width="60dp"
-                    android:layout_height="wrap_content"
-                    android:text="Andhra Meals"
-                    android:textSize="30dp"
-                    android:layout_weight="0.33"/>
-                <TextView
-                    android:id="@+id/am_cnt"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:text="8"
-                    android:textSize="30dp"
-                    android:layout_weight="0.33"
-                    android:padding="20dp"/>
-
-            </LinearLayout>
-        </TableRow>/>
-
-    </TableLayout>
 </android.support.constraint.ConstraintLayout>
