@@ -35,7 +35,9 @@ public class HomeActivity extends AppCompatActivity {
         diningRL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(HomeActivity.this, DiningMainActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
 
